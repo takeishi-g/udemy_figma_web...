@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="list01">
+        <li class="item01">りんご</li>
+        <li class="item01">みかん</li>
+        <li class="item01">パイナップル</li>
+      </ul>
+
+      <div class="spacer"></div>
+
+      <ol class="list02">
+        <li class="item02">無料説明会に参加する</li>
+        <li class="item02">体験レッスンを受ける</li>
+        <li class="item02">Webで契約をする</li>
+        <li class="item02">無料説明会に参加する</li>
+        <li class="item02">体験レッスンを受ける</li>
+        <li class="item02">Webで契約をする</li>
+        <li class="item02">無料説明会に参加する</li>
+        <li class="item02">体験レッスンを受ける</li>
+        <li class="item02">Webで契約をする</li>
+        <li class="item02">無料説明会に参加する</li>
+        <li class="item02">体験レッスンを受ける</li>
+        <li class="item02">Webで契約をする</li>
+      </ol>
+      
+    </div>
+  </body>
+  <script>
+    // 特定の要素の疑似要素のカウンター値を取得
+const items = document.querySelectorAll('.item02');
+
+items.forEach((item, index) => {
+  const computedStyle = window.getComputedStyle(item, '::before');
+  const counterValue = computedStyle.content.replace(/["']/g, ''); // content の値を取得
+  console.log(`Item ${index + 1} Counter:`, counterValue);
+});
+
+  </script>
+</html>
