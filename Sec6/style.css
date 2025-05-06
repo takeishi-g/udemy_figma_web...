@@ -1,0 +1,32 @@
+.toast {
+  display: inline-grid;
+  grid-template-columns: 27px 1fr 27px;
+  align-items: center;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+
+  span {
+    margin: 0 32px 0 8px;
+  }
+
+}
+
+
+.success {
+  border: 2px solid var(--color-toast-success);
+  background-color: var(--color-toast-bg-success);
+  color: var(--color-toast-success);
+}
+
+.warning {
+  border: 2px solid var(--color-toast-warning);
+  background-color: var(--color-toast-bg-warning);
+  color: var(--color-toast-warning);
+}
+
+.error {
+  border: 2px solid var(--color-toast-error);
+  background-color: var(--color-toast-bg-error);
+  color: var(--color-toast-error);
+}
